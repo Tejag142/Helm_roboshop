@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.deployment.name}}
+  namespace: {{ .Values.deployment.namespace}}
+  labels:
+    project: {{ .Values.deployment.project}}
+    component: {{ .Values.deployment.component}}
+    tier: {{ .Values.deployment.tier}}
+data:
+  REDIS_HOST: "redis"
+  CATALOGUE_HOST: "catalogue"
+  CATALOGUE_PORT: "8080"

@@ -1,0 +1,24 @@
+deployment:
+  imageURL: teja142/catalogue
+  imageVersion: optv1
+  name: catalogue
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: catalogue
+
+service: 
+  name: catalogue
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: catalogue
+  port: 8080
+  targetPort: 8080
+
+ConfigMap:
+  name: catalogue
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: catalogue

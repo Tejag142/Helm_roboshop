@@ -1,0 +1,24 @@
+deployment:
+  imageURL: teja142/cart
+  imageVersion: optv1
+  name: cart
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: cart
+
+service: 
+  name: cart
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: cart
+  port: 8080
+  targetPort: 8080
+
+ConfigMap:
+  name: cart
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: cart

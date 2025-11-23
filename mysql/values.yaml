@@ -19,6 +19,6 @@ service:
 secret:
   name: mysql
   namespace: roboshop
-  tier: app
+  tier: database
   project: roboshop
   component: mysql

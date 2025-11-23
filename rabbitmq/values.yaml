@@ -1,6 +1,6 @@
 deployment:
   imageURL: teja142/rabbitmq
-  imageVersion: optv1
+  imageVersion: roboshop
   name: rabbitmq
   namespace: roboshop
   tier: app

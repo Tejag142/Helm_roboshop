@@ -1,0 +1,31 @@
+deployment:
+  imageURL: teja142/payment
+  imageVersion: optv1
+  name: payment
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: payment
+
+service: 
+  name: payment
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: payment
+  port: 8080
+  targetPort: 8080
+
+ConfigMap:
+  name: payment
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: payment
+
+secret:
+  name: payment
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: payment

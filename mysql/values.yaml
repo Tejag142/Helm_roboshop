@@ -1,0 +1,17 @@
+deployment:
+  imageURL: teja142/mysql
+  imageVersion: optv1
+  name: mysql
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: mysql
+
+service: 
+  name: mysql
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: mysql
+  port: 3306
+  targetPort: 3306

@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1
 name: catalogue
 version: 1.0.0 # chart version
 description: catalogue helm chart description

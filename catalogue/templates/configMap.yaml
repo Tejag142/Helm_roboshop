@@ -8,6 +8,5 @@ metadata:
     component: {{ .Values.deployment.component}}
     tier: {{ .Values.deployment.tier}}
 data:
-  REDIS_HOST: "redis"
-  CATALOGUE_HOST: "catalogue"
-  CATALOGUE_PORT: "8080"
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodb:27017/catalogue"

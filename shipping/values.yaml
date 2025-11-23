@@ -1,0 +1,24 @@
+deployment:
+  imageURL: teja142/shipping
+  imageVersion: optv1
+  name: shipping
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: shipping
+
+service: 
+  name: shipping
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: shipping
+  port: 8080
+  targetPort: 8080
+
+ConfigMap:
+  name: shipping
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: shipping

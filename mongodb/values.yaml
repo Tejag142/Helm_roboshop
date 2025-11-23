@@ -1,0 +1,17 @@
+deployment:
+  imageURL: teja142/mongodb
+  imageVersion: optv1
+  name: mongodb
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: mongodb
+
+service: 
+  name: mongodb
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: mongodb
+  port: 27017
+  targetPort: 27017

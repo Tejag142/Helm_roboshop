@@ -1,0 +1,24 @@
+deployment:
+  imageURL: teja142/user
+  imageVersion: optv1
+  name: user
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: user
+
+service: 
+  name: user
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: user
+  port: 8080
+  targetPort: 8080
+
+ConfigMap:
+  name: user
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: user

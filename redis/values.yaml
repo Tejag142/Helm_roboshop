@@ -13,8 +13,8 @@ service:
   tier: app
   project: roboshop
   component: redis
-  port: 3306
-  targetPort: 3306
+  port: 6379
+  targetPort: 6379
 
 secret:
   name: redis

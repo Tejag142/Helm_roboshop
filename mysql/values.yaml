@@ -15,3 +15,10 @@ service:
   component: mysql
   port: 3306
   targetPort: 3306
+
+secret:
+  name: mysql
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: mysql

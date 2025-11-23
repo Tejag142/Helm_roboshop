@@ -1,0 +1,24 @@
+deployment:
+  imageURL: teja142/rabbitmq
+  imageVersion: optv1
+  name: rabbitmq
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: rabbitmq
+
+service: 
+  name: rabbitmq
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: rabbitmq
+  port: 3306
+  targetPort: 3306
+
+secret:
+  name: rabbitmq
+  namespace: roboshop
+  tier: app
+  project: roboshop
+  component: rabbitmq

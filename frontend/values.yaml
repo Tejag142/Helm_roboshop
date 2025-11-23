@@ -1,0 +1,24 @@
+deployment:
+  imageURL: teja142/frontend
+  imageVersion: optv1
+  name: frontend
+  namespace: roboshop
+  tier: web
+  project: roboshop
+  component: frontend
+
+service: 
+  name: frontend
+  namespace: roboshop
+  tier: web
+  project: roboshop
+  component: frontend
+  port: 80
+  targetPort: 8080
+
+ConfigMap:
+  name: frontend
+  namespace: roboshop
+  tier: web
+  project: roboshop
+  component: frontend

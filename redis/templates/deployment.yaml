@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name}}
+  namespace: {{ .Values.deployment.namespace}}
+  labels:
+    project: {{ .Values.deployment.project}}
+    component: {{ .Values.deployment.component}}
+    tier: {{ .Values.deployment.tier}}
+spec:
+  replicas: {{ .Values.deployment.replicas}}
+  selector:
+    matchLabels:
+      project: {{ .Values.deployment.project}}
+      component: {{ .Values.deployment.component}}
+      tier: {{ .Values.deployment.tier}}
+  template:
+    metadata:
+      labels:
+        project: {{ .Values.deployment.project}}
+        component: {{ .Values.deployment.component}}
+        tier: {{ .Values.deployment.tier}}
+    spec:
+      containers:
+      - name: {{ .Values.deployment.name}}
+        #image: teja142/cart:optv1
+        image: "{{ .Values.deployment.imageURL}}:{{ .Values.deployment.imageVersion }}"
+        envFrom:
+        - configMapRef:
+            name: {{ .Values.deployment.name}}

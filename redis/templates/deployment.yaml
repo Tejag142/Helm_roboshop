@@ -25,6 +25,3 @@ spec:
       - name: {{ .Values.deployment.name}}
         #image: teja142/cart:optv1
         image: "{{ .Values.deployment.imageURL}}:{{ .Values.deployment.imageVersion }}"
-        envFrom:
-        - configMapRef:
-            name: {{ .Values.deployment.name}}
